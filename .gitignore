@@ -45,5 +45,12 @@ next-env.d.ts
 /outputs/
 /work/
 
+# Embedded Postgres used by the local development driver.
+/.pglite/
+/.pglite-*/
+
+# Local browser check artifacts.
+/.shots/
+
 !.env.example
 *.tsbuildinfo

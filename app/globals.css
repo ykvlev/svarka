@@ -28,3 +28,31 @@ body{padding:14px 14px 0}
 @media(min-width:1500px){.cinema-hero{min-height:620px}.cinema-copy{padding-top:130px}}
 @media(max-width:700px){.cinema-hero{min-height:590px;height:calc(100svh - 16px)}.cinema-foot{bottom:45px}.cinema-copy{padding-top:125px}}
 @media(max-height:720px) and (min-width:701px){.cinema-hero{min-height:540px}.cinema-copy{padding-top:105px}.cinema-copy h1{font-size:44px}.cinema-copy .eyebrow{margin-bottom:14px}.cinema-foot{bottom:35px}}
+
+/* Admin panel: lists incoming requests stored in the database. */
+.admin{max-width:1000px;padding-top:70px;padding-bottom:80px}
+.admin h1{font-size:36px;margin-bottom:10px}
+.admin code{background:#272735;padding:2px 7px;border-radius:6px;font-size:14px}
+.admin-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;margin-bottom:30px}
+.admin-actions{display:flex;align-items:center;gap:12px}
+.admin-actions .ghost{padding:11px 20px;font-size:14px}
+.admin-actions form{display:inline-flex}
+.admin-list{display:grid;gap:16px}
+.admin-card{background:#1e1e2a;border:1px solid #454551;border-radius:12px;padding:20px 22px}
+.admin-card header{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.admin-card header strong{font-size:19px;font-weight:500;margin-right:14px}
+.admin-card header a{color:#aab4ff;text-decoration:underline}
+.admin-card time{font-size:13px;color:#a3a3b3}
+.admin-card dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px 22px;margin:16px 0 0}
+.admin-card dt{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#a3a3b3}
+.admin-card dd{margin:3px 0 0;word-break:break-word}
+.admin-card footer{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px;border-top:1px solid #34343f;padding-top:16px}
+.admin-status{display:flex;align-items:center;gap:8px}
+.admin-status select{background:#272735;color:#ededf3;border:1px solid #454551;border-radius:9px;padding:9px 11px;font:inherit;font-size:14px}
+.admin-status button{background:#5266eb;color:#fff;border:0;border-radius:9px;padding:9px 18px;font:inherit;font-size:14px}
+.admin-status button:hover{background:#6476f5}
+.admin-login{max-width:390px;margin:40px auto 0;background:#1e1e2a;border:1px solid #454551;border-radius:16px;padding:30px}
+.admin-login label{display:block;font-size:14px;color:#c3c3cc;margin-top:18px}
+.admin-login input{width:100%;margin-top:7px;padding:13px 15px;border-radius:10px;border:1px solid #454551;background:#272735;color:#ededf3;font:inherit}
+.admin-login .submit{margin-top:20px}
+@media(max-width:700px){.admin{padding-top:40px}.admin h1{font-size:29px}.admin-card{padding:17px}}

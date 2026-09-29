@@ -1,6 +1,25 @@
+# Кантователь — сайт и приём заявок
+
+Лендинг кантователя для садовых тракторов (Великий Новгород) на Next.js 16.
+
+- `npm run dev` — локальная разработка на http://localhost:3000
+- `npm run build` — обычная сборка Next.js для Vercel
+- `npm test` — сквозная проверка формы, API и админки (нужен запущенный сервер)
+- `/admin` — список заявок, вход по `ADMIN_PASSWORD`
+
+Заявки сохраняются в Postgres (`DATABASE_URL`) и дублируются в Telegram. Локально
+`DATABASE_URL` не нужен: используется встроенный Postgres (PGlite) в `.pglite/`.
+
+Подробности по деплою — в [DEPLOY.md](./DEPLOY.md).
+
+---
+
 # vinext-starter
 
 A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.
+
+The original Cloudflare build is still available through `npm run dev:sites` and
+`npm run build:sites`.
 
 ## Prerequisites
 
